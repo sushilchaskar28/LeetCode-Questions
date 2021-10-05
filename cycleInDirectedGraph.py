@@ -18,7 +18,7 @@ class Graph:
         vis=[False]*(self.v)
         stk=[False]*(self.v)
         for i in range(self.v):
-            if vis[i]:
+            if not vis[i]:
                 if self.util(i,vis,stk): return True
         return False
 g = Graph(5) 
